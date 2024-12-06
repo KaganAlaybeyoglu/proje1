@@ -1,0 +1,332 @@
+body{
+    margin:0 auto;
+}
+*,::after,::before{
+    box-sizing: border-box;
+}
+header {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    /*çizginin boyu*/
+    background-color:#d0bfbf;
+    position: sticky;
+    /*position görünmez çizgi oluþturur divi ayýrýr
+        sticky kaydýrdýgýmýzda yukarýda býrakýr
+    */
+}
+    header .header-description{
+        max-height:40px;
+       /* yazý ortada kalsýn*/
+       width:60%;
+       float:left;
+      
+     
+       /*sola daya*/
+    }
+        header .header-description small  {
+            color: #fff;
+            font-size: 40px;
+            font-style: italic;
+            font-weight: bold;
+            padding-left: 55px;
+            margin: 20px,0,0,0;
+            color: black;
+            /*içerden dýsarýya 40px bosluk*/
+        }
+        
+            header .authentication-link {
+                width: 40%;
+                /*%40 dan geriye %60 kaldý onu da buna 
+            verdik
+        */
+                float: right;
+                /*saða yasla*/
+                max-height: 40px;
+            }
+    header .authentication-link.ul{
+        list-style:none;
+        /*basýndaki yuvarlaklarý sil*/
+        padding:0;
+        float:right;
+        margin:0 10% 0 0;
+        /*margin dýsarýdaki elemenlerin birbirine
+        olan uzaklýðý. saat yönünde gider.
+        üstten sagdan alttan soldan
+        paddingde de ayný sýralama
+        */
+
+    }
+    header .authentication-link ul li{
+        display:inline-block;
+        /*ayný satýrda yan yana getir*/
+        line-height:25px;
+        border-right: 1px solid #fff;
+        /*her birinin yanýnda 1px düz(solid)
+            beyaz çizgi
+        */
+        padding-right:20px;
+        /* çizgiyle 20 px çizgi*/
+        padding-left:20px;
+
+    }
+    header .authentication-link ul  li:last-child{
+        border-right:unset;
+        /*son cocuga çizgi verme*/
+        padding-right:unset;
+
+    }
+    header .authentication-link ul li a {
+        text-decoration:none;
+        /*alttaki çizgiyi siler*/
+        color:#000;
+        font-weight:bold;
+        letter-spacing:0.09em;
+        /*harflerin aralarýndaki boslugu acar*/
+
+    }
+    header .authentication-link ul li a:hover{
+            /* a nýn üzerine geldiðimde*/
+            color:white;
+
+    }
+    nav{
+        position:relative;
+        width:100%;
+        padding: 0,0;
+        background:#0e223f;
+        height:90px;
+    }
+        nav .logo {
+            position: relative;
+            width: 30%;
+            float: left;
+            height: 90px;
+            
+            
+        }
+            nav .logo img {
+                height: 65px;
+                position: absolute;
+                margin: 0;
+                top:50%;
+                left:50%;
+                transform: translate(-50%,-50%);
+            }
+            nav .menü{
+                width:70%;
+                float:left;
+                height:90px;
+                
+            }
+            nav .menü ul{
+                list-style:none;
+                padding:0;
+                max-height:90px;
+                line-height:90px;
+                text-align:center;
+                margin:0 auto;
+            }
+            nav .menü ul li{
+                display:inline-block;
+                border-right:1px solid#fff;
+                line-height:30px;
+            }
+                nav .menü ul li:last-child{
+                    border-right:unset;
+                }
+                nav .menü ul li a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 20px;
+                    padding: 0 20px;
+                    /* padding iki deðer verirsek
+                    ilki hem yukardan asagýdan ikinci hem
+                    sagdan hem soldan
+                */
+                
+                }
+                a .active{
+                    color: grey !important;
+                    /*aktif ekranýn üstü gri olur
+                        important ezilmemesi için
+                    */
+                }
+                nav .menü ul li a:hover{
+                    color:black;
+                }
+                aside{
+                    position:relative;
+                    width:15%;
+                    float:left;
+                    background-color:#808080;
+                    height: calc(100vh - 210px);
+                    /*nav bar,header ve footer 210px
+                        hepside 100vh kalaný aside olsun
+                    */
+
+                }
+                aside left-menü{
+                    width:60%;
+                    margin:0 auto;
+
+
+                }
+                aside .left-menü h2{
+                    margin:20px 0;
+                    text-align:center;
+
+
+                }
+                aside .left-menü ul{
+                    list-style:none;
+                    margin:20px auto 0;
+                    margin-block-start:0;
+                    margin-block-end:0;
+                    padding-inline-start:0;
+                }
+                  aside .left-menü ul li{
+                    text-align:left;
+                    margin:0 auto 10px;
+                    /*aralarýný açar auto ortalar*/
+                  }
+                    aside .left-menü ul li a {
+                        text-decoration: none;
+                        color: white;
+                        font-size: 20px;
+                        padding: 0 20px;
+                    }
+               aside .left-menü ul li a:hover {
+                      color: black;
+                      border-bottom: 1px solid blue;
+                      border-bottom-width:initial;
+               }
+               .text-center{
+                   text-align:center;
+               }
+               main {
+                   position:relative;
+                   width:100%;
+                   height: calc(100vh-210px);
+                
+
+               }
+               
+               main .row{
+                   display:flex;
+                   flex-wrap: wrap;
+                   /*sýgmayan yerleri keserek satýrlaþtýrýr getir*/
+
+               }
+
+                main .card1 {
+                    flex: 0 0 auto;
+                    width: 25%;
+                    margin: 0 auto 10px;
+                    padding:10px 10px;
+                }
+                main .card2 {
+                    flex: 0 0 auto;
+                    width: 25%;
+                    margin: 0 auto 10px;
+                    padding: 10px 10px;
+                }
+                main .card3 {
+                    flex: 0 0 auto;
+                    width: 25%;
+                    margin: 0 auto 10px;
+                    padding: 10px 10px;
+                }
+                main .card4 {
+                    flex: 0 0 auto;
+                    width: 25%;
+                    margin: 0 auto 10px;
+                    padding: 10px 10px;
+                }
+              
+               
+
+                footer .row {
+                    display: flex;
+                    flex-wrap: wrap;
+                }
+               footer .sosyal-medya{
+                   background-color:black;
+                   width:33.333%;
+               }
+               footer .sosyal-medya h5{
+                   text-align:center;
+                   color:white;
+                   
+                  
+               }
+                footer .sosyal-medya ul {
+                    text-align:center;
+                    list-style: none;
+                    margin: 20px auto 0;
+                    margin-block-start: 0;
+                    margin-block-end: 0;
+                    padding-inline-start: 0;
+                }
+                footer .sosya-medya ul li {
+                    position: relative;
+                    text-align: left;
+                    margin: 0 auto 10px;
+                }
+                footer .sosyal-medya ul li a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 20px;
+                    padding: 0 20px;
+                }
+                footer .sosyal-medya ul li a:hover {
+                    color: white;
+                    border-bottom: 1px solid blue;
+                    border-bottom-width: initial;
+                }
+                footer .iletiþim{
+                    background-color:black;
+                    width:33.33%
+                    
+                }
+                footer .iletiþim h5{
+                    color:white;
+                    text-align:center;
+                }
+                    footer .iletiþim ul {
+                        text-align: center;
+                        list-style: none;
+                        margin: 20px auto 0;
+                        margin-block-start: 0;
+                        margin-block-end: 0;
+                        padding-inline-start: 0;
+                    }
+                    footer .iletiþim ul li {
+                        
+                        color: white;
+                        position: relative;
+                        text-align: left;
+                        margin: 0 auto 10px
+                    }
+                footer .Neden{
+                    background-color:black;
+                    width:33.33%;
+                }
+                footer .Neden h5{
+                    text-align:center;
+                    color:white;
+                }
+                    footer .Neden a {
+                        text-align: center;
+                        text-decoration: none;
+                        color: white;
+                        font-size: 20px;
+                        padding: 0 20px;
+                    }
+                    footer .Neden a:hover{
+                        color:white;
+                        border-bottom:1px solid blue;
+
+                    }
+                
+
