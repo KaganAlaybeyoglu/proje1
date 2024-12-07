@@ -127,11 +127,11 @@ header {
                 text-align:center;
                 margin:0 auto;
             }
-            nav .menü ul li{
-                display:inline-block;
-                border-right:1px solid#fff;
-                line-height:30px;
-            }
+                nav .menü ul li {
+                    display: inline-block;
+                    border-right: 1px solid#fff;
+                    line-height: 30px;
+                }
                 nav .menü ul li:last-child{
                     border-right:unset;
                 }
@@ -245,7 +245,8 @@ header {
                 }
               
                
-
+                
+            
                 footer .row {
                     display: flex;
                     flex-wrap: wrap;
@@ -328,5 +329,74 @@ header {
                         border-bottom:1px solid blue;
 
                     }
-                
+                    .col-12{
+                        flex:0 0 auto;
+                        width:100%;
+                        max-width:100%;
 
+                    }
+                    .col-6{
+                        flex:0 0 auto;
+                        width:50%;
+                        max-width:50%;
+
+                    }
+                    .col-4{
+                        flex: 0 0 auto;
+                        width:33.333%;
+                        max-width:100%;
+
+                    }
+                    .col-3{
+                        flex:0 0 auto;
+                        width:25%;
+                        max-width:100%;
+                    }
+                    .border-1{
+                        border: 1px solid red;
+                    }
+
+                    form .register{
+                        width:50%;
+                        margin: 0 auto;
+                        /*ortalar birincisi üstten alttan ikincisi
+                            saðdan soldan eþitler
+                        */
+                    }
+                    form input{
+                        flex:0 0 auto;
+                        width:100%;
+                        border-color:#808080;
+                        border-radius:5px;
+                        /*kenarlar yuvarlanýr*/
+                        padding:5px;
+                        /*input cercevesini geniþletir*/
+                        transition:border-color .15s ease-in-out, box-shadow .15s ease-in-out ;
+                        /* inputa týkladýgýmýzda cevresinde golge border oluþturur bunun kaç saniyede olucagýný bildirir
+                            ease in out içerden dýsarý olur anlamýný verir
+                        */
+                        background-color:azure;
+                        background-clip: padding-box;
+                        /* yazýnýn arkdasýna cerceve yapar gereksiz silinebilir*/
+                        line-height: 1.5;
+                        margin-top:10px;
+                        /* inputla ad, soyad yazýsýný ayýrýr*/
+
+                    }
+                    form label{
+                        letter-spacing: 0.09em;
+                        /* harfler arasýndaki boslugu açar*/
+
+                    }
+                    input:focus{
+                        outline:0;
+                        box-shadow: 0 0 0 0.05rem;
+                        /* inputun içine girdiðimizde* çerçevenin etrafý renklenir*/
+                       
+                    }
+                    button:hover{
+                        cursor: pointer;
+                    }
+                  
+
+                    
