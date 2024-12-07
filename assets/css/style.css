@@ -397,6 +397,18 @@ header {
                     button:hover{
                         cursor: pointer;
                     }
+.aboutus {
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 70px;
+    padding-bottom : 80px;
+    margin-top: 30px;
+    margin-left: 230px;
+    margin-right: 30px;
+    margin-bottom: 130px;
+    border-style :groove;
+    border-width :5px;
+}
                   
 
                     
