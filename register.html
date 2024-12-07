@@ -101,11 +101,18 @@
                         <input type="text" id="km" placeholder="Kilometre Girin" />
 
                     </div>
-                    <div class="btn-group col-6" role="group" aria-label="Basic outlined example">
-                        <button type="button" class="btn btn-outline-primary">Otomatil</button>
-                        <button type="button" class="btn btn-outline-primary">Manuel</button>
-                        <button type="button" class="btn btn-outline-primary">Yarý Otomatik</button>
+                    <div class="radio col-6">
+                        <p>Vites Türü</p>
+                        <input type="radio" class="btn-check" name="options-base" id="option5" autocomplete="off" checked>
+                        <label class="btn" for="option5">Otomatik</label>
+
+                        <input type="radio" class="btn-check" name="options-base" id="option6" autocomplete="off">
+                        <label class="btn" for="option6">Manuel</label>
+
+                        <input type="radio" class="btn-check" name="options-base" id="option7" autocomplete="off" >
+                        <label class="btn" for="option7">Yarý Otomatik</label>
                     </div>
+                   
                     <div class="col-6 ">
                         <label for="hasarkaydý">Hasar Kaydý</label>
                         <input type="text" id="hasarkaydý" placeholder="Hasar Kaydý Girin" />
@@ -119,7 +126,7 @@
 
 
                     <div class="col-12">
-                        <button type="submit">Kaydet</button>
+                        <button type="submit" class="btn-register">Kaydet</button>
                         <!-- submite bastýgýmda actionda yazan yere yollar-->
                     </div>
                     <div class="col-12">
