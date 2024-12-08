@@ -397,6 +397,34 @@ header {
                     button:hover{
                         cursor: pointer;
                     }
+                    .btn-register{
+                        border-radius:5px;
+                        border:1px solid grey;
+                        font-weight:bold;
+                        letter-spacing:0.05em;
+                        /* harflerin aralarý aç*/
+                        padding:5px;
+                        width:100%;
+                    }
+                    .btn-register:hover{
+                      cursor:pointer;
+                    }
+                    .radio{
+                       
+                        padding:1px;
+                        height:40px;
+                        
+                        
+                    }
+                    .radio p{
+                        padding-inline:2px;
+                        margin:4px;
+                    }
+
+
+
+
+
 .aboutus {
     padding-top: 50px;
     padding-left: 100px;
