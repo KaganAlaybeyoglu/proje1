@@ -409,6 +409,22 @@ header {
     border-style :groove;
     border-width :5px;
 }
+
+.konum {
+    
+    padding-left: 210px;
+    padding-bottom: 20px;
+   
+}
+.container {
+    display: flex; /* Flexbox düzeni */
+    justify-content: space-between; /* Elemanlar arasýna boþluk ekler (isteðe baðlý) */
+}
+.konumhead {
+    padding-top: 150px;
+}
+
+
                   
 
                     
