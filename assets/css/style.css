@@ -159,13 +159,19 @@ header {
                     position:relative;
                     width:15%;
                     float:left;
-                    background-color:#808080;
+                    background-color:white;
                     height: calc(100vh - 210px);
                     /*nav bar,header ve footer 210px
                         hepside 100vh kalaný aside olsun
                     */
 
                 }
+                .typechekbox{
+                    border-bottom:1px solid grey;
+                    padding:15px;
+                    
+                }
+                
                 aside left-menü{
                     width:60%;
                     margin:0 auto;
@@ -211,7 +217,7 @@ header {
                 
 
                }
-               
+           
                main .row{
                    display:flex;
                    flex-wrap: wrap;
@@ -243,10 +249,15 @@ header {
                     margin: 0 auto 10px;
                     padding: 10px 10px;
                 }
-              
-               
-                
-            
+
+
+                footer{
+                    position:relative;
+                    float:right;
+                    width:80%;
+                    height:80px;
+                    line-height:80px;
+                }
                 footer .row {
                     display: flex;
                     flex-wrap: wrap;
@@ -295,7 +306,9 @@ header {
                     text-align:center;
                 }
                     footer .iletiþim ul {
-                        text-align: center;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
                         list-style: none;
                         margin: 20px auto 0;
                         margin-block-start: 0;
@@ -312,23 +325,13 @@ header {
                 footer .Neden{
                     background-color:black;
                     width:33.33%;
+                    
                 }
-                footer .Neden h5{
-                    text-align:center;
-                    color:white;
-                }
-                    footer .Neden a {
-                        text-align: center;
-                        text-decoration: none;
+                    footer .Neden p {
+                        padding:15px;
                         color: white;
-                        font-size: 20px;
-                        padding: 0 20px;
                     }
-                    footer .Neden a:hover{
-                        color:white;
-                        border-bottom:1px solid blue;
-
-                    }
+                
                     .col-12{
                         flex:0 0 auto;
                         width:100%;
